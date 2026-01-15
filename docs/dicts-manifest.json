@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-01-15T19:15:49.549039Z",
-  "releaseTag": "2",
+  "generatedAt": "2026-01-15T19:23:58.764774Z",
+  "releaseTag": "3",
   "items": [
     {
       "id": "de_base",
@@ -112,6 +112,17 @@
       "name": "Russian (Basic)",
       "shortDescription": "Common words • lightweight",
       "languageTag": "ru-RU"
+    },
+    {
+      "id": "uk_base",
+      "filename": "uk_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/3/uk_base.dict",
+      "bytes": 14517270,
+      "sha256": "9a836fa9a69e725df403f3738ca7b0120285abe41402019fd0c0a433d621146b",
+      "updatedAt": "2026-01-15T19:23:58.764719Z",
+      "name": "Uk Base",
+      "shortDescription": "",
+      "languageTag": ""
     }
   ]
 }
