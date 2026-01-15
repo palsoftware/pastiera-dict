@@ -129,10 +129,12 @@ def update_manifest(
         if "filename" in item and "id" in item:
             id_by_filename[item["filename"]] = item["id"]
     
-    # Process each asset
-    updated_items = []
+    # Start with all existing items as base (preserve items not in this release)
+    # Use dict keyed by ID for efficient lookup and updates
+    updated_items_dict = {item.get("id"): item.copy() for item in existing_items}
     processed_ids = set()
     
+    # Process each asset from the current release
     for asset in assets:
         filename = asset["name"]
         if not filename.endswith(extension):
@@ -159,15 +161,11 @@ def update_manifest(
         # Ensure ID uniqueness within this batch
         original_id = item_id
         counter = 1
-        while item_id in processed_ids:
+        while item_id in processed_ids or (item_id in updated_items_dict and item_id != original_id):
             item_id = f"{original_id}_{counter}"
             counter += 1
         
         processed_ids.add(item_id)
-        
-        # Re-fetch existing item if ID changed
-        if item_id != original_id:
-            existing_item = find_existing_item_by_id(existing_items, item_id)
         
         # Get asset metadata
         download_url = asset["browser_download_url"]
@@ -177,10 +175,14 @@ def update_manifest(
         print(f"Computing SHA-256 for {filename}...", file=sys.stderr)
         sha256 = compute_sha256(download_url)
         
-        # Build item entry with technical fields
-        if existing_item:
-            # Preserve existing metadata, update only changed fields
-            item = existing_item.copy()
+        # Check if this is an update to an existing item or a new item
+        is_update = item_id in updated_items_dict
+        
+        if is_update:
+            # Update existing item with new release data
+            item = updated_items_dict[item_id]
+            print(f"Updating existing {asset_type} '{item_id}' from release {release_tag}", file=sys.stderr)
+            # Update technical fields with new release data
             item["url"] = download_url
             item["bytes"] = file_size
             item["sha256"] = sha256
@@ -189,7 +191,8 @@ def update_manifest(
             if "filename" not in item or item["filename"] != filename:
                 item["filename"] = filename
         else:
-            # New item
+            # New item - create from scratch
+            print(f"Adding new {asset_type} '{item_id}' from release {release_tag}", file=sys.stderr)
             item = {
                 "id": item_id,
                 "filename": filename,
@@ -198,15 +201,14 @@ def update_manifest(
                 "sha256": sha256,
                 "updatedAt": datetime.utcnow().isoformat() + "Z"
             }
+            updated_items_dict[item_id] = item
         
-        # Add UI-friendly fields based on asset type
+        # Add/update UI-friendly fields based on asset type
         if asset_type == "layout":
             # Parse layout JSON to extract name and description
             layout_name, layout_description = extract_layout_metadata(download_url)
             item["name"] = layout_name
             item["shortDescription"] = layout_description
-            # Layouts don't have languageTag (they're keyboard layouts, not language-specific)
-            # But we can leave it empty or omit it
             if "languageTag" not in item:
                 item["languageTag"] = ""
         elif asset_type == "dictionary":
@@ -217,23 +219,26 @@ def update_manifest(
                 item["shortDescription"] = metadata.get("shortDescription", "")
                 item["languageTag"] = metadata.get("languageTag", "")
             else:
-                # Fallback: derive readable name from ID
-                item["name"] = derive_readable_name_from_id(item_id)
-                item["shortDescription"] = ""
-                item["languageTag"] = ""
-                print(f"Warning: Missing metadata for dictionary '{item_id}'. Please add it to dicts-metadata.json", file=sys.stderr)
-        
-        updated_items.append(item)
+                # Fallback: derive readable name from ID (only if not already set)
+                if "name" not in item or not item.get("name"):
+                    item["name"] = derive_readable_name_from_id(item_id)
+                if "shortDescription" not in item or not item.get("shortDescription"):
+                    item["shortDescription"] = ""
+                if "languageTag" not in item or not item.get("languageTag"):
+                    item["languageTag"] = ""
+                if not is_update:  # Only warn for new items, not updates
+                    print(f"Warning: Missing metadata for dictionary '{item_id}'. Please add it to dicts-metadata.json", file=sys.stderr)
     
-    # Sort by ID for stable ordering
-    updated_items.sort(key=lambda x: x.get("id", ""))
+    # Convert dict to list and sort by ID for stable ordering
+    updated_items_list = list(updated_items_dict.values())
+    updated_items_list.sort(key=lambda x: x.get("id", ""))
     
     # Build final manifest
     manifest = {
         "schemaVersion": SCHEMA_VERSION,
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "releaseTag": release_tag,
-        "items": updated_items
+        "items": updated_items_list
     }
     
     # Ensure directory exists
@@ -243,7 +248,7 @@ def update_manifest(
     with open(manifest_path, 'w', encoding='utf-8') as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     
-    print(f"Updated {manifest_path} with {len(updated_items)} {asset_type} items", file=sys.stderr)
+    print(f"Updated {manifest_path} with {len(updated_items_list)} {asset_type} items", file=sys.stderr)
 
 
 def fetch_release_assets(owner: str, repo: str, release_tag: Optional[str] = None, tag_pattern: Optional[str] = None) -> tuple[str, List[Dict]]:

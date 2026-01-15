@@ -25,7 +25,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.repository.default_branch }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Ensure latest version
+        run: |
+          git fetch origin ${{ github.event.repository.default_branch }}
+          git reset --hard origin/${{ github.event.repository.default_branch }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -60,5 +67,5 @@ jobs:
           else
             RELEASE_TAG="${{ github.event.release.tag_name || github.event.inputs.release_tag || 'latest' }}"
             git commit -m "chore: update manifests from release $RELEASE_TAG"
-            git push
+            git push origin ${{ github.event.repository.default_branch }}
           fi
