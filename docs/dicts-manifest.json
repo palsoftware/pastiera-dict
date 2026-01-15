@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-01-15T18:51:25.343080Z",
+  "generatedAt": "2026-01-15T19:00:52.396937Z",
   "releaseTag": "2",
   "items": [
     {
@@ -9,7 +9,7 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/2/gd_base.dict",
       "bytes": 2409298,
       "sha256": "aa1d161b3c4ffd0ae82e90b22144cca8d6da5fb93ee71f2fad92f749b33adefe",
-      "updatedAt": "2026-01-15T18:51:24.735800Z",
+      "updatedAt": "2026-01-15T19:00:51.831689Z",
       "name": "Gd Base",
       "shortDescription": "",
       "languageTag": ""
@@ -20,7 +20,7 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/2/hu_base.dict",
       "bytes": 12867020,
       "sha256": "3adae1e0128bb30c54ab6bd4b63ebf894ff4d06c35735be224d1e2639a1782bc",
-      "updatedAt": "2026-01-15T18:51:25.343026Z",
+      "updatedAt": "2026-01-15T19:00:52.396888Z",
       "name": "Hu Base",
       "shortDescription": "",
       "languageTag": ""
