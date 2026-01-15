@@ -1,95 +1,29 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-01-15T18:20:23.637429Z",
-  "releaseTag": "1",
+  "generatedAt": "2026-01-15T18:51:25.343080Z",
+  "releaseTag": "2",
   "items": [
     {
-      "id": "de_base",
-      "filename": "de_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/de_base.dict",
-      "bytes": 14819232,
-      "sha256": "8c1463df544915197822d41ff2ec3ca498d9ac43c25dddfe81d6a16540166307",
-      "updatedAt": "2026-01-15T18:20:18.820191Z",
-      "name": "German (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "de-DE"
+      "id": "gd_base",
+      "filename": "gd_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/2/gd_base.dict",
+      "bytes": 2409298,
+      "sha256": "aa1d161b3c4ffd0ae82e90b22144cca8d6da5fb93ee71f2fad92f749b33adefe",
+      "updatedAt": "2026-01-15T18:51:24.735800Z",
+      "name": "Gd Base",
+      "shortDescription": "",
+      "languageTag": ""
     },
     {
-      "id": "en_base",
-      "filename": "en_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/en_base.dict",
-      "bytes": 13198738,
-      "sha256": "4e0244f753652a890431017a4bf03fc612852cb9cd8933db31a6d25b0c7adea5",
-      "updatedAt": "2026-01-15T18:20:19.531713Z",
-      "name": "English (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "en-US"
-    },
-    {
-      "id": "es_base",
-      "filename": "es_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/es_base.dict",
-      "bytes": 14191031,
-      "sha256": "68014d12958797072d6fe92c97698104e9fda5fe61394c28479787a1a8ebd1a8",
-      "updatedAt": "2026-01-15T18:20:20.190561Z",
-      "name": "Spanish (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "es-ES"
-    },
-    {
-      "id": "fr_base",
-      "filename": "fr_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/fr_base.dict",
-      "bytes": 13919878,
-      "sha256": "f8104119b6dbe2bca8a3989d74d582141f0d2c656d979e6c455640a6732ede64",
-      "updatedAt": "2026-01-15T18:20:20.867248Z",
-      "name": "French (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "fr-FR"
-    },
-    {
-      "id": "it_base",
-      "filename": "it_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/it_base.dict",
-      "bytes": 13938536,
-      "sha256": "7776eb2365b0485ead13f31e172b23fcb9b95b6319202a8dba8b130f82ba7cca",
-      "updatedAt": "2026-01-15T18:20:21.538210Z",
-      "name": "Italian (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "it-IT"
-    },
-    {
-      "id": "pl_base",
-      "filename": "pl_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/pl_base.dict",
-      "bytes": 14150750,
-      "sha256": "333f5ad033fd2d11771aa8b2d1455baf79e19d40d4cad4f5d1f396831b04be52",
-      "updatedAt": "2026-01-15T18:20:22.181086Z",
-      "name": "Polish (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "pl-PL"
-    },
-    {
-      "id": "pt_base",
-      "filename": "pt_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/pt_base.dict",
-      "bytes": 13819649,
-      "sha256": "704e35eae7bcdcc3a8d9f2f9fa564f6e302fed435b722dfc5dcefe93cf15e5c4",
-      "updatedAt": "2026-01-15T18:20:22.825504Z",
-      "name": "Portuguese (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "pt-PT"
-    },
-    {
-      "id": "ru_base",
-      "filename": "ru_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/ru_base.dict",
-      "bytes": 21054932,
-      "sha256": "64c5a10a0d4e0e67d64a75425e4e0aa1fe5edc8484102a30fe0376e97cb2b5dd",
-      "updatedAt": "2026-01-15T18:20:23.637409Z",
-      "name": "Russian (Basic)",
-      "shortDescription": "Common words • lightweight",
-      "languageTag": "ru-RU"
+      "id": "hu_base",
+      "filename": "hu_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/2/hu_base.dict",
+      "bytes": 12867020,
+      "sha256": "3adae1e0128bb30c54ab6bd4b63ebf894ff4d06c35735be224d1e2639a1782bc",
+      "updatedAt": "2026-01-15T18:51:25.343026Z",
+      "name": "Hu Base",
+      "shortDescription": "",
+      "languageTag": ""
     }
   ]
 }
