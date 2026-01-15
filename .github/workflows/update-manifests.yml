@@ -1,0 +1,64 @@
+name: Update Manifests
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (leave empty for latest)'
+        required: false
+        type: string
+      tag_pattern:
+        description: 'Tag pattern (e.g., v* for v1.0.0, v2.0.0)'
+        required: false
+        type: string
+  release:
+    types: [published]
+
+jobs:
+  update-manifests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Run manifest updater
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_TAG="${{ github.event.release.tag_name || github.event.inputs.release_tag }}"
+          TAG_PATTERN="${{ github.event.inputs.tag_pattern }}"
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          
+          CMD="python3 update_manifests.py --owner ${{ github.repository_owner }} --repo $REPO_NAME"
+          
+          if [ -n "$RELEASE_TAG" ]; then
+            CMD="$CMD --release-tag $RELEASE_TAG"
+          elif [ -n "$TAG_PATTERN" ]; then
+            CMD="$CMD --tag-pattern $TAG_PATTERN"
+          fi
+          
+          $CMD
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/dicts-manifest.json docs/layouts-manifest.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            RELEASE_TAG="${{ github.event.release.tag_name || github.event.inputs.release_tag || 'latest' }}"
+            git commit -m "chore: update manifests from release $RELEASE_TAG"
+            git push
+          fi

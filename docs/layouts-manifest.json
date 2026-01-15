@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-01-15T18:02:06.255765Z",
+  "releaseTag": "1",
+  "items": [
+    {
+      "id": "arabic",
+      "filename": "arabic.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/arabic.json",
+      "bytes": 3349,
+      "sha256": "eb5f76651901a9e70f734c13d9119cf2ee72dbc187edd51813c75a50a349e355",
+      "updatedAt": "2026-01-15T18:02:02.074166Z"
+    },
+    {
+      "id": "armenian_phonetic",
+      "filename": "armenian_phonetic.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/armenian_phonetic.json",
+      "bytes": 4058,
+      "sha256": "6d4be7a78c34fcfaab102633f4d6caeb43832729d5b1006a7f7f184618abe7b4",
+      "updatedAt": "2026-01-15T18:02:02.537112Z"
+    },
+    {
+      "id": "azerty",
+      "filename": "azerty.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/azerty.json",
+      "bytes": 1577,
+      "sha256": "9a54e60b3e1db94b4154c791987c61fbe17cf20b72d8e2a0f413a7a17a26a47d",
+      "updatedAt": "2026-01-15T18:02:02.988901Z"
+    },
+    {
+      "id": "bulgarian_phonetic",
+      "filename": "bulgarian_phonetic.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/bulgarian_phonetic.json",
+      "bytes": 1667,
+      "sha256": "48d3b97e8982e82a883f2ceab80db3bf9c1dd95d72ecb579cf7ab3fe7d7aab16",
+      "updatedAt": "2026-01-15T18:02:03.432360Z"
+    },
+    {
+      "id": "bulgarian_phonetic_traditional",
+      "filename": "bulgarian_phonetic_traditional.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/bulgarian_phonetic_traditional.json",
+      "bytes": 2373,
+      "sha256": "acbd34d123e5604b0aea8c97a7848acb3ce2194c1903577771f725b9313b5af5",
+      "updatedAt": "2026-01-15T18:02:03.902620Z"
+    },
+    {
+      "id": "cyrillic_translite",
+      "filename": "Cyrillic_Translite.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/Cyrillic_Translite.json",
+      "bytes": 3830,
+      "sha256": "e60d4e8e40a43518233a6ed5b9fd675f4d70ac70444fe4d307480692f7238d5d",
+      "updatedAt": "2026-01-15T18:02:04.406277Z"
+    },
+    {
+      "id": "greek",
+      "filename": "greek.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/greek.json",
+      "bytes": 1637,
+      "sha256": "31ada4b6600e0c984ee337d06623258c70e33c43d057fa1f6d2dfe4ac3ae4b4c",
+      "updatedAt": "2026-01-15T18:02:04.882827Z"
+    },
+    {
+      "id": "qwerty",
+      "filename": "qwerty.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/qwerty.json",
+      "bytes": 1579,
+      "sha256": "7c3c05e9f1465cc73ff0395d2f7db27d56f58731a5fd7f5d18ea0eefa5f2a5b3",
+      "updatedAt": "2026-01-15T18:02:05.340413Z"
+    },
+    {
+      "id": "qwertz",
+      "filename": "qwertz.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/qwertz.json",
+      "bytes": 1629,
+      "sha256": "9d6d83feed62bd90177e1bfb9e4bc3a9672d1e507ff2c7ac24212f8754298b25",
+      "updatedAt": "2026-01-15T18:02:05.792715Z"
+    },
+    {
+      "id": "russian_translit",
+      "filename": "russian_translit.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/russian_translit.json",
+      "bytes": 3068,
+      "sha256": "10ec234b46df83bc6872d771bed573d512f55cd07bfc6cb9b5a9bf25e50fe34f",
+      "updatedAt": "2026-01-15T18:02:06.255749Z"
+    }
+  ]
+}

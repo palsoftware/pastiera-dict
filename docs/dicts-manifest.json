@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-01-15T18:02:01.624773Z",
+  "releaseTag": "1",
+  "items": [
+    {
+      "id": "de_base",
+      "filename": "de_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/de_base.dict",
+      "bytes": 14819232,
+      "sha256": "8c1463df544915197822d41ff2ec3ca498d9ac43c25dddfe81d6a16540166307",
+      "updatedAt": "2026-01-15T18:01:54.903926Z"
+    },
+    {
+      "id": "en_base",
+      "filename": "en_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/en_base.dict",
+      "bytes": 13198738,
+      "sha256": "4e0244f753652a890431017a4bf03fc612852cb9cd8933db31a6d25b0c7adea5",
+      "updatedAt": "2026-01-15T18:01:56.391023Z"
+    },
+    {
+      "id": "es_base",
+      "filename": "es_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/es_base.dict",
+      "bytes": 14191031,
+      "sha256": "68014d12958797072d6fe92c97698104e9fda5fe61394c28479787a1a8ebd1a8",
+      "updatedAt": "2026-01-15T18:01:57.199370Z"
+    },
+    {
+      "id": "fr_base",
+      "filename": "fr_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/fr_base.dict",
+      "bytes": 13919878,
+      "sha256": "f8104119b6dbe2bca8a3989d74d582141f0d2c656d979e6c455640a6732ede64",
+      "updatedAt": "2026-01-15T18:01:58.040921Z"
+    },
+    {
+      "id": "it_base",
+      "filename": "it_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/it_base.dict",
+      "bytes": 13938536,
+      "sha256": "7776eb2365b0485ead13f31e172b23fcb9b95b6319202a8dba8b130f82ba7cca",
+      "updatedAt": "2026-01-15T18:01:58.862497Z"
+    },
+    {
+      "id": "pl_base",
+      "filename": "pl_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/pl_base.dict",
+      "bytes": 14150750,
+      "sha256": "333f5ad033fd2d11771aa8b2d1455baf79e19d40d4cad4f5d1f396831b04be52",
+      "updatedAt": "2026-01-15T18:01:59.694535Z"
+    },
+    {
+      "id": "pt_base",
+      "filename": "pt_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/pt_base.dict",
+      "bytes": 13819649,
+      "sha256": "704e35eae7bcdcc3a8d9f2f9fa564f6e302fed435b722dfc5dcefe93cf15e5c4",
+      "updatedAt": "2026-01-15T18:02:00.505922Z"
+    },
+    {
+      "id": "ru_base",
+      "filename": "ru_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/ru_base.dict",
+      "bytes": 21054932,
+      "sha256": "64c5a10a0d4e0e67d64a75425e4e0aa1fe5edc8484102a30fe0376e97cb2b5dd",
+      "updatedAt": "2026-01-15T18:02:01.624757Z"
+    }
+  ]
+}
