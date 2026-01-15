@@ -16,7 +16,7 @@ from typing import Dict, List, Optional
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = 1
 
 
 def compute_sha256(url: str) -> str:
@@ -61,6 +61,40 @@ def load_existing_manifest(manifest_path: str) -> Dict:
     }
 
 
+def load_dicts_metadata(metadata_path: str) -> Dict[str, Dict[str, str]]:
+    """Load dictionary metadata mapping file."""
+    if os.path.exists(metadata_path):
+        try:
+            with open(metadata_path, 'r', encoding='utf-8') as f:
+                return json.loads(f.read())
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Could not load dicts metadata: {e}", file=sys.stderr)
+    return {}
+
+
+def extract_layout_metadata(url: str) -> tuple[str, str]:
+    """Download and parse layout JSON to extract name and description."""
+    try:
+        with urlopen(url) as response:
+            layout_data = json.loads(response.read().decode('utf-8'))
+            name = layout_data.get("name", "")
+            description = layout_data.get("description", "")
+            # Trim description to single line
+            if description:
+                description = description.split('\n')[0].strip()
+            return name, description
+    except Exception as e:
+        print(f"Warning: Could not parse layout metadata from {url}: {e}", file=sys.stderr)
+        return "", ""
+
+
+def derive_readable_name_from_id(item_id: str) -> str:
+    """Derive a readable name from ID as fallback."""
+    # Convert "de_base" -> "de base" -> "De Base"
+    parts = item_id.split('_')
+    return ' '.join(word.capitalize() for word in parts)
+
+
 def find_existing_item_by_id(items: List[Dict], item_id: str) -> Optional[Dict]:
     """Find existing item by ID."""
     for item in items:
@@ -82,7 +116,8 @@ def update_manifest(
     asset_type: str,
     release_tag: str,
     assets: List[Dict],
-    extension: str
+    extension: str,
+    dicts_metadata: Optional[Dict[str, Dict[str, str]]] = None
 ) -> None:
     """Update manifest file with new asset information."""
     existing_manifest = load_existing_manifest(manifest_path)
@@ -142,7 +177,7 @@ def update_manifest(
         print(f"Computing SHA-256 for {filename}...", file=sys.stderr)
         sha256 = compute_sha256(download_url)
         
-        # Build item entry
+        # Build item entry with technical fields
         if existing_item:
             # Preserve existing metadata, update only changed fields
             item = existing_item.copy()
@@ -163,6 +198,30 @@ def update_manifest(
                 "sha256": sha256,
                 "updatedAt": datetime.utcnow().isoformat() + "Z"
             }
+        
+        # Add UI-friendly fields based on asset type
+        if asset_type == "layout":
+            # Parse layout JSON to extract name and description
+            layout_name, layout_description = extract_layout_metadata(download_url)
+            item["name"] = layout_name
+            item["shortDescription"] = layout_description
+            # Layouts don't have languageTag (they're keyboard layouts, not language-specific)
+            # But we can leave it empty or omit it
+            if "languageTag" not in item:
+                item["languageTag"] = ""
+        elif asset_type == "dictionary":
+            # Use metadata mapping for dictionaries
+            if dicts_metadata and item_id in dicts_metadata:
+                metadata = dicts_metadata[item_id]
+                item["name"] = metadata.get("name", "")
+                item["shortDescription"] = metadata.get("shortDescription", "")
+                item["languageTag"] = metadata.get("languageTag", "")
+            else:
+                # Fallback: derive readable name from ID
+                item["name"] = derive_readable_name_from_id(item_id)
+                item["shortDescription"] = ""
+                item["languageTag"] = ""
+                print(f"Warning: Missing metadata for dictionary '{item_id}'. Please add it to dicts-metadata.json", file=sys.stderr)
         
         updated_items.append(item)
     
@@ -278,7 +337,18 @@ def main():
         help="Path to layouts manifest file"
     )
     
+    parser.add_argument(
+        "--dicts-metadata",
+        default="docs/dicts-metadata.json",
+        help="Path to dictionaries metadata mapping file"
+    )
+    
     args = parser.parse_args()
+    
+    # Load dictionary metadata if it exists
+    dicts_metadata = None
+    if os.path.exists(args.dicts_metadata):
+        dicts_metadata = load_dicts_metadata(args.dicts_metadata)
     
     # Fetch release assets
     release_tag, assets = fetch_release_assets(args.owner, args.repo, args.release_tag, args.tag_pattern)
@@ -296,7 +366,8 @@ def main():
             "dictionary",
             release_tag,
             dict_assets,
-            ".dict"
+            ".dict",
+            dicts_metadata
         )
     else:
         print("No dictionary assets found", file=sys.stderr)
@@ -307,7 +378,8 @@ def main():
             "layout",
             release_tag,
             layout_assets,
-            ".json"
+            ".json",
+            None
         )
     else:
         print("No layout assets found", file=sys.stderr)

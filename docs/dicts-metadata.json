@@ -1,0 +1,42 @@
+{
+  "de_base": {
+    "name": "German (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "de-DE"
+  },
+  "en_base": {
+    "name": "English (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "en-US"
+  },
+  "es_base": {
+    "name": "Spanish (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "es-ES"
+  },
+  "fr_base": {
+    "name": "French (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "fr-FR"
+  },
+  "it_base": {
+    "name": "Italian (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "it-IT"
+  },
+  "pl_base": {
+    "name": "Polish (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "pl-PL"
+  },
+  "pt_base": {
+    "name": "Portuguese (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "pt-PT"
+  },
+  "ru_base": {
+    "name": "Russian (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "ru-RU"
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.0",
-  "generatedAt": "2026-01-15T18:02:06.255765Z",
+  "schemaVersion": 1,
+  "generatedAt": "2026-01-15T18:20:29.135887Z",
   "releaseTag": "1",
   "items": [
     {
@@ -9,7 +9,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/arabic.json",
       "bytes": 3349,
       "sha256": "eb5f76651901a9e70f734c13d9119cf2ee72dbc187edd51813c75a50a349e355",
-      "updatedAt": "2026-01-15T18:02:02.074166Z"
+      "updatedAt": "2026-01-15T18:20:23.996706Z",
+      "name": "Arabic",
+      "shortDescription": "Arabic keyboard layout (Unihertz Titan 2)",
+      "languageTag": ""
     },
     {
       "id": "armenian_phonetic",
@@ -17,7 +20,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/armenian_phonetic.json",
       "bytes": 4058,
       "sha256": "6d4be7a78c34fcfaab102633f4d6caeb43832729d5b1006a7f7f184618abe7b4",
-      "updatedAt": "2026-01-15T18:02:02.537112Z"
+      "updatedAt": "2026-01-15T18:20:24.497962Z",
+      "name": "Armenian phonetic (multi-tap)",
+      "shortDescription": "Based on xkb-phonetic Eastern Armenian layout",
+      "languageTag": ""
     },
     {
       "id": "azerty",
@@ -25,7 +31,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/azerty.json",
       "bytes": 1577,
       "sha256": "9a54e60b3e1db94b4154c791987c61fbe17cf20b72d8e2a0f413a7a17a26a47d",
-      "updatedAt": "2026-01-15T18:02:02.988901Z"
+      "updatedAt": "2026-01-15T18:20:25.058872Z",
+      "name": "AZERTY",
+      "shortDescription": "French AZERTY keyboard layout",
+      "languageTag": ""
     },
     {
       "id": "bulgarian_phonetic",
@@ -33,7 +42,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/bulgarian_phonetic.json",
       "bytes": 1667,
       "sha256": "48d3b97e8982e82a883f2ceab80db3bf9c1dd95d72ecb579cf7ab3fe7d7aab16",
-      "updatedAt": "2026-01-15T18:02:03.432360Z"
+      "updatedAt": "2026-01-15T18:20:25.577085Z",
+      "name": "Bulgarian Phonetic",
+      "shortDescription": "Bulgarian phonetic keyboard layout (Latin to Cyrillic)",
+      "languageTag": ""
     },
     {
       "id": "bulgarian_phonetic_traditional",
@@ -41,7 +53,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/bulgarian_phonetic_traditional.json",
       "bytes": 2373,
       "sha256": "acbd34d123e5604b0aea8c97a7848acb3ce2194c1903577771f725b9313b5af5",
-      "updatedAt": "2026-01-15T18:02:03.902620Z"
+      "updatedAt": "2026-01-15T18:20:26.130489Z",
+      "name": "Bulgarian Phonetic (Traditional)",
+      "shortDescription": "Standard Bulgarian phonetic traditional mapping (Cyrillic-first).",
+      "languageTag": ""
     },
     {
       "id": "cyrillic_translite",
@@ -49,7 +64,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/Cyrillic_Translite.json",
       "bytes": 3830,
       "sha256": "e60d4e8e40a43518233a6ed5b9fd675f4d70ac70444fe4d307480692f7238d5d",
-      "updatedAt": "2026-01-15T18:02:04.406277Z"
+      "updatedAt": "2026-01-15T18:20:26.674393Z",
+      "name": "Cyrillic Translite ",
+      "shortDescription": "Cyrillic transliteration layout",
+      "languageTag": ""
     },
     {
       "id": "greek",
@@ -57,7 +75,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/greek.json",
       "bytes": 1637,
       "sha256": "31ada4b6600e0c984ee337d06623258c70e33c43d057fa1f6d2dfe4ac3ae4b4c",
-      "updatedAt": "2026-01-15T18:02:04.882827Z"
+      "updatedAt": "2026-01-15T18:20:27.231768Z",
+      "name": "Greek",
+      "shortDescription": "Modern Greek keyboard layout (Polytonic)",
+      "languageTag": ""
     },
     {
       "id": "qwerty",
@@ -65,7 +86,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/qwerty.json",
       "bytes": 1579,
       "sha256": "7c3c05e9f1465cc73ff0395d2f7db27d56f58731a5fd7f5d18ea0eefa5f2a5b3",
-      "updatedAt": "2026-01-15T18:02:05.340413Z"
+      "updatedAt": "2026-01-15T18:20:27.797988Z",
+      "name": "QWERTY",
+      "shortDescription": "Standard QWERTY keyboard layout",
+      "languageTag": ""
     },
     {
       "id": "qwertz",
@@ -73,7 +97,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/qwertz.json",
       "bytes": 1629,
       "sha256": "9d6d83feed62bd90177e1bfb9e4bc3a9672d1e507ff2c7ac24212f8754298b25",
-      "updatedAt": "2026-01-15T18:02:05.792715Z"
+      "updatedAt": "2026-01-15T18:20:28.364290Z",
+      "name": "QWERTZ",
+      "shortDescription": "German/Austrian/Swiss QWERTZ keyboard layout (Z and Y swapped compared to QWERTY)",
+      "languageTag": ""
     },
     {
       "id": "russian_translit",
@@ -81,7 +108,10 @@
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/russian_translit.json",
       "bytes": 3068,
       "sha256": "10ec234b46df83bc6872d771bed573d512f55cd07bfc6cb9b5a9bf25e50fe34f",
-      "updatedAt": "2026-01-15T18:02:06.255749Z"
+      "updatedAt": "2026-01-15T18:20:28.938143Z",
+      "name": "Russian (multi-tap)",
+      "shortDescription": "Cyrillic-first multi-tap layout based on Latin key positions.",
+      "languageTag": ""
     }
   ]
 }
