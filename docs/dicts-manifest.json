@@ -54,9 +54,9 @@
       "bytes": 2409298,
       "sha256": "aa1d161b3c4ffd0ae82e90b22144cca8d6da5fb93ee71f2fad92f749b33adefe",
       "updatedAt": "2026-01-15T19:15:48.893293Z",
-      "name": "Gd Base",
+      "name": "Scottish Gaelic",
       "shortDescription": "",
-      "languageTag": ""
+      "languageTag": "gd"
     },
     {
       "id": "hu_base",
@@ -65,9 +65,9 @@
       "bytes": 12867020,
       "sha256": "3adae1e0128bb30c54ab6bd4b63ebf894ff4d06c35735be224d1e2639a1782bc",
       "updatedAt": "2026-01-15T19:15:49.549004Z",
-      "name": "Hu Base",
+      "name": "Hungarian",
       "shortDescription": "",
-      "languageTag": ""
+      "languageTag": "hu"
     },
     {
       "id": "it_base",
@@ -120,7 +120,7 @@
       "bytes": 14517270,
       "sha256": "9a836fa9a69e725df403f3738ca7b0120285abe41402019fd0c0a433d621146b",
       "updatedAt": "2026-01-15T19:23:58.764719Z",
-      "name": "Uk Base",
+      "name": "Ukranian",
       "shortDescription": "",
       "languageTag": "uk-UA"
     }
