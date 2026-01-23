@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-01-23T16:12:23.433611Z",
-  "releaseTag": "4",
+  "generatedAt": "2026-01-23T17:06:36.315264Z",
+  "releaseTag": "5",
   "items": [
     {
       "id": "arabic",
@@ -67,6 +67,17 @@
       "updatedAt": "2026-01-15T18:20:26.674393Z",
       "name": "Cyrillic Translite ",
       "shortDescription": "Cyrillic transliteration layout",
+      "languageTag": ""
+    },
+    {
+      "id": "emoji_layers",
+      "filename": "Emoji_Layers.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/5/Emoji_Layers.json",
+      "bytes": 10151,
+      "sha256": "ae2901c33abd258ab2ac95f01de43583f66c2bf61f6506a832cf90f8d64bf3e2",
+      "updatedAt": "2026-01-23T17:06:36.228400Z",
+      "name": "Emoji Layers",
+      "shortDescription": "Shift+double click has corresponding hands, pointers mapped to wasd. Triple tap for emoji/emoticons using that letter/alt key",
       "languageTag": ""
     },
     {
