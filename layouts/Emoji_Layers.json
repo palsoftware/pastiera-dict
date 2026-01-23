@@ -1,0 +1,500 @@
+{
+  "name": "Emoji Layers",
+  "description": "Shift+double click has corresponding hands, pointers mapped to wasd. Triple tap for emoji/emoticons using that letter/alt key",
+  "mappings": {
+    "KEYCODE_Q": {
+      "lowercase": "🤫",
+      "uppercase": "🤩",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🤫",
+          "uppercase": "🤩"
+        },
+        {
+          "lowercase": "",
+          "uppercase": ""
+        },
+        {
+          "lowercase": "",
+          "uppercase": "↖️"
+        }
+      ]
+    },
+    "KEYCODE_W": {
+      "lowercase": "🥴",
+      "uppercase": "😉",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🥴",
+          "uppercase": "😉"
+        },
+        {
+          "lowercase": "😘",
+          "uppercase": "👆️"
+        },
+        {
+          "lowercase": "😖",
+          "uppercase": "⬆️"
+        }
+      ]
+    },
+    "KEYCODE_E": {
+      "lowercase": "👀",
+      "uppercase": "😮‍💨",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "👀",
+          "uppercase": "😮‍💨"
+        },
+        {
+          "lowercase": "😑",
+          "uppercase": "😡"
+        },
+        {
+          "lowercase": "🫣",
+          "uppercase": "↗️"
+        }
+      ]
+    },
+    "KEYCODE_R": {
+      "lowercase": "🙄",
+      "uppercase": "🤨",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🙄",
+          "uppercase": "🤨"
+        },
+        {
+          "lowercase": "🤣",
+          "uppercase": "😥"
+        },
+        {
+          "lowercase": "<3",
+          "uppercase": "🙌"
+        }
+      ]
+    },
+    "KEYCODE_T": {
+      "lowercase": "🤔",
+      "uppercase": "🫩",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🤔",
+          "uppercase": "🫩"
+        },
+        {
+          "lowercase": "😤",
+          "uppercase": "👍️"
+        },
+        {
+          "lowercase": "☹️",
+          "uppercase": "🥹"
+        }
+      ]
+    },
+    "KEYCODE_Y": {
+      "lowercase": "😋",
+      "uppercase": "🥱",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😋",
+          "uppercase": "🥱"
+        },
+        {
+          "lowercase": "😩",
+          "uppercase": ""
+        },
+        {
+          "lowercase": "🙂",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_U": {
+      "lowercase": "🙃",
+      "uppercase": "😒",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🙃",
+          "uppercase": "😒"
+        },
+        {
+          "lowercase": "😊",
+          "uppercase": "🫵"
+        },
+        {
+          "lowercase": "^-^",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_I": {
+      "lowercase": "😶‍🌫️",
+      "uppercase": "🕵️",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😶‍🌫️",
+          "uppercase": "🕵️"
+        },
+        {
+          "lowercase": "🤒",
+          "uppercase": "☝️"
+        },
+        {
+          "lowercase": "🤳",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_O": {
+      "lowercase": "😯",
+      "uppercase": "😮",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😯",
+          "uppercase": "😮"
+        },
+        {
+          "lowercase": "😦",
+          "uppercase": "👌"
+        },
+        {
+          "lowercase": "🫤",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_P": {
+      "lowercase": "🥳",
+      "uppercase": "🥺",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🥳",
+          "uppercase": "🥺"
+        },
+        {
+          "lowercase": "😛",
+          "uppercase": "🤌"
+        },
+        {
+          "lowercase": "😜",
+          "uppercase": "💯"
+        }
+      ]
+    },
+    "KEYCODE_A": {
+      "lowercase": "😠",
+      "uppercase": "😇",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😠",
+          "uppercase": "😇"
+        },
+        {
+          "lowercase": "🤬",
+          "uppercase": "👈️"
+        },
+        {
+          "lowercase": "👽️",
+          "uppercase": "⬅️"
+        }
+      ]
+    },
+    "KEYCODE_S": {
+      "lowercase": "😅",
+      "uppercase": "😏",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😅",
+          "uppercase": "😏"
+        },
+        {
+          "lowercase": "🤷",
+          "uppercase": "👇️"
+        },
+        {
+          "lowercase": "😕",
+          "uppercase": "⬇️"
+        }
+      ]
+    },
+    "KEYCODE_D": {
+      "lowercase": "🫠",
+      "uppercase": "😵‍💫",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🫠",
+          "uppercase": "😵‍💫"
+        },
+        {
+          "lowercase": "🤤",
+          "uppercase": "👉️"
+        },
+        {
+          "lowercase": "😁",
+          "uppercase": "➡️"
+        }
+      ]
+    },
+    "KEYCODE_F": {
+      "lowercase": "🙁",
+      "uppercase": "😦",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🙁",
+          "uppercase": "😦"
+        },
+        {
+          "lowercase": "🤦",
+          "uppercase": "🙏"
+        },
+        {
+          "lowercase": "❤️‍🔥",
+          "uppercase": "👭"
+        }
+      ]
+    },
+    "KEYCODE_G": {
+      "lowercase": "😀",
+      "uppercase": "😄",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😀",
+          "uppercase": "😄"
+        },
+        {
+          "lowercase": "😬",
+          "uppercase": "👎️"
+        },
+        {
+          "lowercase": "😃",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_H": {
+      "lowercase": "💜",
+      "uppercase": "😍",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "💜",
+          "uppercase": "😍"
+        },
+        {
+          "lowercase": "🥵",
+          "uppercase": "🫶"
+        },
+        {
+          "lowercase": "🥰",
+          "uppercase": "🤝"
+        }
+      ]
+    },
+    "KEYCODE_J": {
+      "lowercase": "🕹️",
+      "uppercase": "🃏",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🕹️",
+          "uppercase": "🃏"
+        },
+        {
+          "lowercase": "🎃",
+          "uppercase": "🏴‍☠️"
+        },
+        {
+          "lowercase": "💀",
+          "uppercase": "☠️"
+        }
+      ]
+    },
+    "KEYCODE_K": {
+      "lowercase": "😚",
+      "uppercase": "😗",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😚",
+          "uppercase": "😗"
+        },
+        {
+          "lowercase": "💋",
+          "uppercase": ""
+        },
+        {
+          "lowercase": "🫦",
+          "uppercase": "✊"
+        }
+      ]
+    },
+    "KEYCODE_L": {
+      "lowercase": "😂",
+      "uppercase": "😭",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😂",
+          "uppercase": "😭"
+        },
+        {
+          "lowercase": "🤥",
+          "uppercase": "🤟"
+        },
+        {
+          "lowercase": "🕴️",
+          "uppercase": "🥊"
+        }
+      ]
+    },
+    "KEYCODE_Z": {
+      "lowercase": "😪",
+      "uppercase": "😴",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😪",
+          "uppercase": "😴"
+        },
+        {
+          "lowercase": "🤐",
+          "uppercase": ""
+        },
+        {
+          "lowercase": "🤪",
+          "uppercase": ""
+        }
+      ]
+    },
+    "KEYCODE_X": {
+      "lowercase": "😵",
+      "uppercase": "😆",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😵",
+          "uppercase": "😆"
+        },
+        {
+          "lowercase": "🩻",
+          "uppercase": "🤞"
+        },
+        {
+          "lowercase": "🫡",
+          "uppercase": "↙️"
+        }
+      ]
+    },
+    "KEYCODE_C": {
+      "lowercase": "😢",
+      "uppercase": "🥲",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😢",
+          "uppercase": "🥲"
+        },
+        {
+          "lowercase": "🥶",
+          "uppercase": "👏"
+        },
+        {
+          "lowercase": "😟",
+          "uppercase": "🤭"
+        }
+      ]
+    },
+    "KEYCODE_V": {
+      "lowercase": "🤮",
+      "uppercase": "🫥",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🤮",
+          "uppercase": "🫥"
+        },
+        {
+          "lowercase": "✌️",
+          "uppercase": "🖖"
+        },
+        {
+          "lowercase": "📼",
+          "uppercase": "↘️"
+        }
+      ]
+    },
+    "KEYCODE_B": {
+      "lowercase": "😳",
+      "uppercase": "🤧",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "😳",
+          "uppercase": "🤧"
+        },
+        {
+          "lowercase": "🤕",
+          "uppercase": "🤚"
+        },
+        {
+          "lowercase": "😎",
+          "uppercase": "🤛"
+        }
+      ]
+    },
+    "KEYCODE_N": {
+      "lowercase": "🤢",
+      "uppercase": "🤓",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🤢",
+          "uppercase": "🤓"
+        },
+        {
+          "lowercase": "😐️",
+          "uppercase": "💅"
+        },
+        {
+          "lowercase": "🙅",
+          "uppercase": "👊"
+        }
+      ]
+    },
+    "KEYCODE_M": {
+      "lowercase": "🤯",
+      "uppercase": "🧐",
+      "multiTapEnabled": true,
+      "taps": [
+        {
+          "lowercase": "🤯",
+          "uppercase": "🧐"
+        },
+        {
+          "lowercase": "😷",
+          "uppercase": "🖕"
+        },
+        {
+          "lowercase": "🤑",
+          "uppercase": "🤜"
+        }
+      ]
+    }
+  }
+}
