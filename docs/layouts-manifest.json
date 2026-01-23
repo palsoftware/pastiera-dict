@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-01-15T18:20:29.135887Z",
-  "releaseTag": "1",
+  "generatedAt": "2026-01-23T16:12:23.433611Z",
+  "releaseTag": "4",
   "items": [
     {
       "id": "arabic",
@@ -81,6 +81,28 @@
       "languageTag": ""
     },
     {
+      "id": "hungarian_qwerty",
+      "filename": "hungarian_qwerty.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/4/hungarian_qwerty.json",
+      "bytes": 3379,
+      "sha256": "e1fc0cee0c4757304b47ef5d564705cd0c36242c94db2d61a1cb5177be0f63c0",
+      "updatedAt": "2026-01-23T16:12:22.253668Z",
+      "name": "Hungarian (QWERTY)",
+      "shortDescription": "Hungarian QWERTY keyboard with multi-tap accents",
+      "languageTag": ""
+    },
+    {
+      "id": "hungarian_qwertz",
+      "filename": "hungarian_qwertz.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/4/hungarian_qwertz.json",
+      "bytes": 3379,
+      "sha256": "70f73a49c3998e91f14052b6a11489da796c0308b8f90d7519a906c379b78c7c",
+      "updatedAt": "2026-01-23T16:12:22.737698Z",
+      "name": "Hungarian (QWERTZ)",
+      "shortDescription": "Hungarian QWERTZ keyboard with multi-tap accents",
+      "languageTag": ""
+    },
+    {
       "id": "qwerty",
       "filename": "qwerty.json",
       "url": "https://github.com/palsoftware/pastiera-dict/releases/download/1/qwerty.json",
@@ -111,6 +133,17 @@
       "updatedAt": "2026-01-15T18:20:28.938143Z",
       "name": "Russian (multi-tap)",
       "shortDescription": "Cyrillic-first multi-tap layout based on Latin key positions.",
+      "languageTag": ""
+    },
+    {
+      "id": "scottish_gaelic",
+      "filename": "scottish_gaelic.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/4/scottish_gaelic.json",
+      "bytes": 3054,
+      "sha256": "e76ea7323f293986bd4108061b4dbe715fe40134efa69aaa22b42ec8d6bddd12",
+      "updatedAt": "2026-01-23T16:12:23.251755Z",
+      "name": "Scottish Gaelic",
+      "shortDescription": "Scottish Gaelic with multi-tap accents",
       "languageTag": ""
     }
   ]
