@@ -43,5 +43,10 @@
     "name": "Ukrainian",
     "shortDescription": "Common words • lightweight",
     "languageTag": "uk-UA"
+  },
+  "vi_base": {
+    "name": "Vietnamese (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "vi-VN"
   }
 }
