@@ -38,5 +38,10 @@
     "name": "Russian (Basic)",
     "shortDescription": "Common words • lightweight",
     "languageTag": "ru-RU"
+  },
+  "uk_base": {
+    "name": "Ukrainian",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "uk-UA"
   }
 }
