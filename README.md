@@ -81,8 +81,3 @@ These manifests are consumed by the app via GitHub Pages.
 - locale integrations in `pastiera` keep existing locales intact (merge conflicts often happen here)
 - translation files have valid format placeholders (`%1$s`, `%1$d`, etc.)
 - `dicts-metadata.json` contains metadata for any new dictionary IDs
-
-## Housekeeping
-
-- `.DS_Store` is ignored and should remain untracked
-
