@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-02-25T21:27:54.147153Z",
-  "releaseTag": "8",
+  "generatedAt": "2026-03-31T11:26:23.396761Z",
+  "releaseTag": "10",
   "items": [
     {
       "id": "de_base",
@@ -79,6 +79,17 @@
       "name": "Italian (Basic)",
       "shortDescription": "Common words • lightweight",
       "languageTag": "it-IT"
+    },
+    {
+      "id": "no_base",
+      "filename": "no_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/10/no_base.dict",
+      "bytes": 13102923,
+      "sha256": "94fb17d828253c94e29d23dacff8a142b743deab7e0a465dfb41b50923cf8620",
+      "updatedAt": "2026-03-31T11:26:23.396730Z",
+      "name": "Norwegian (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "no-NO"
     },
     {
       "id": "pl_base",
