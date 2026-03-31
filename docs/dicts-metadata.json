@@ -48,5 +48,10 @@
     "name": "Vietnamese",
     "shortDescription": "Common words • lightweight",
     "languageTag": "vi-VN"
+  },
+  "no_base": {
+    "name": "Norwegian (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "no-NO"
   }
 }
