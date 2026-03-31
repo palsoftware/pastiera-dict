@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-02-25T09:18:36.090097Z",
-  "releaseTag": "6",
+  "generatedAt": "2026-03-31T10:50:38.842644Z",
+  "releaseTag": "9",
   "items": [
     {
       "id": "arabic",
@@ -133,6 +133,17 @@
       "updatedAt": "2026-01-15T18:20:28.364290Z",
       "name": "QWERTZ",
       "shortDescription": "German/Austrian/Swiss QWERTZ keyboard layout (Z and Y swapped compared to QWERTY)",
+      "languageTag": ""
+    },
+    {
+      "id": "russian_standard",
+      "filename": "russian_standard.json",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/9/russian_standard.json",
+      "bytes": 3204,
+      "sha256": "0d79eceb5ef5d7fab91d3e77a1919a9523286528f8c9ed6298afb8598e9d8fb3",
+      "updatedAt": "2026-03-31T10:50:38.771624Z",
+      "name": "Russian (ЙЦУКЕН)",
+      "shortDescription": "Standard Russian ЙЦУКЕН layout with multi-tap for additional letters on compact keyboards.",
       "languageTag": ""
     },
     {
