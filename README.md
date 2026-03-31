@@ -38,11 +38,6 @@ Source:
 
 - https://wortschatz-leipzig.de/de/download/
 
-Attribution policy:
-
-- We only add explicit source attribution when the dataset provenance is verified.
-- Currently confirmed Leipzig-based additions include Dutch and Danish dictionary builds.
-
 ## Cross-Repo Workflow (Practical)
 
 ### 1. Add language support in `pastiera`
