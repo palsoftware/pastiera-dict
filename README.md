@@ -25,6 +25,24 @@ This repo is the companion to the main app repo (`palsoftware/pastiera`) and is 
 - `docs/APP_INTEGRATION.md`: app-side retrieval/integration notes
 - `docs/RELEASE_PROCESS.md`: release + manifest automation details
 
+## Corpus Sources and Credits
+
+Some dictionary assets are built from public monolingual corpora.
+For this project we use data from the Leipzig Corpora Collection where applicable.
+
+Reference:
+
+- D. Goldhahn, T. Eckart, U. Quasthoff: *Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages*. Proceedings of LREC 2012, 2012.
+
+Source:
+
+- https://wortschatz-leipzig.de/de/download/
+
+Attribution policy:
+
+- We only add explicit source attribution when the dataset provenance is verified.
+- Currently confirmed Leipzig-based additions include Dutch and Danish dictionary builds.
+
 ## Cross-Repo Workflow (Practical)
 
 ### 1. Add language support in `pastiera`
