@@ -1,4 +1,9 @@
 {
+  "da_base": {
+    "name": "Danish (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "da-DK"
+  },
   "de_base": {
     "name": "German (Basic)",
     "shortDescription": "Common words • lightweight",
@@ -53,5 +58,10 @@
     "name": "Norwegian (Basic)",
     "shortDescription": "Common words • lightweight",
     "languageTag": "no-NO"
+  },
+  "nl_base": {
+    "name": "Dutch (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "nl-NL"
   }
 }
