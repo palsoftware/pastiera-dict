@@ -1,8 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-31T11:26:23.396761Z",
-  "releaseTag": "10",
+  "generatedAt": "2026-03-31T11:30:04.589766Z",
+  "releaseTag": "11",
   "items": [
+    {
+      "id": "da_base",
+      "filename": "da_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/11/da_base.dict",
+      "bytes": 13381053,
+      "sha256": "a7410ff1007b0888279ae6766461f7b616be81f34c3bf0329a9623ac56e8fac7",
+      "updatedAt": "2026-03-31T11:30:04.235789Z",
+      "name": "Danish (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "da-DK"
+    },
     {
       "id": "de_base",
       "filename": "de_base.dict",
@@ -79,6 +90,17 @@
       "name": "Italian (Basic)",
       "shortDescription": "Common words • lightweight",
       "languageTag": "it-IT"
+    },
+    {
+      "id": "nl_base",
+      "filename": "nl_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/11/nl_base.dict",
+      "bytes": 13476178,
+      "sha256": "d74335dc519c194472d588cc2d22c7fb83df71e600dfc45c2ec8bc79fc494aee",
+      "updatedAt": "2026-03-31T11:30:04.589717Z",
+      "name": "Dutch (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "nl-NL"
     },
     {
       "id": "no_base",
