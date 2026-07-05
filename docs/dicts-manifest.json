@@ -1,8 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-03-31T11:30:04.589766Z",
-  "releaseTag": "11",
+  "generatedAt": "2026-07-05T13:52:37.215140Z",
+  "releaseTag": "12",
   "items": [
+    {
+      "id": "cs_base",
+      "filename": "cs_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/12/cs_base.dict",
+      "bytes": 9926592,
+      "sha256": "4e0da3b3dbf84a0ba223383b934332c173f219efc47a4b85ad8d512ea5d10c31",
+      "updatedAt": "2026-07-05T13:52:33.812658Z",
+      "name": "Czech (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "cs-CZ"
+    },
     {
       "id": "da_base",
       "filename": "da_base.dict",
@@ -24,6 +35,17 @@
       "name": "German (Basic)",
       "shortDescription": "Common words • lightweight",
       "languageTag": "de-DE"
+    },
+    {
+      "id": "el_base",
+      "filename": "el_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/12/el_base.dict",
+      "bytes": 21237827,
+      "sha256": "4d6e9ff0ec917595f740ec1c0ea62064e6c831c5c8b316629ed71620c386847b",
+      "updatedAt": "2026-07-05T13:52:35.112012Z",
+      "name": "Greek (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "el-GR"
     },
     {
       "id": "en_base",
@@ -72,13 +94,13 @@
     {
       "id": "hu_base",
       "filename": "hu_base.dict",
-      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/2/hu_base.dict",
-      "bytes": 12867020,
-      "sha256": "3adae1e0128bb30c54ab6bd4b63ebf894ff4d06c35735be224d1e2639a1782bc",
-      "updatedAt": "2026-01-15T19:15:49.549004Z",
-      "name": "Hungarian",
-      "shortDescription": "",
-      "languageTag": "hu"
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/12/hu_base.dict",
+      "bytes": 10258517,
+      "sha256": "ff477908b4f595076d03d6f7f607803580e9579da679bbf03cd32b022b0f3f3b",
+      "updatedAt": "2026-07-05T13:52:35.569288Z",
+      "name": "Hungarian (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "hu-HU"
     },
     {
       "id": "it_base",
@@ -145,6 +167,28 @@
       "name": "Russian (Basic)",
       "shortDescription": "Common words • lightweight",
       "languageTag": "ru-RU"
+    },
+    {
+      "id": "sv_base",
+      "filename": "sv_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/12/sv_base.dict",
+      "bytes": 13482111,
+      "sha256": "9c4d69aaf3a0e5b454175dcd008b30298472acf28348b71b2bd1c32ebdd46dc8",
+      "updatedAt": "2026-07-05T13:52:36.190488Z",
+      "name": "Swedish (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "sv-SE"
+    },
+    {
+      "id": "tr_base",
+      "filename": "tr_base.dict",
+      "url": "https://github.com/palsoftware/pastiera-dict/releases/download/12/tr_base.dict",
+      "bytes": 13837862,
+      "sha256": "cc477a8ea921ada27fd1c284e510ef9c2e69251d88ec83749aa85b198c399914",
+      "updatedAt": "2026-07-05T13:52:37.215105Z",
+      "name": "Turkish (Basic)",
+      "shortDescription": "Common words • lightweight",
+      "languageTag": "tr-TR"
     },
     {
       "id": "uk_base",
