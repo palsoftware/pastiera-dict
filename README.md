@@ -38,6 +38,40 @@ Source:
 
 - https://wortschatz-leipzig.de/de/download/
 
+The Czech, Hungarian, Swedish and Turkish dictionary assets are built from the top 50,000
+frequency-ranked, letter-only entries in these Leipzig Corpora Collection
+frequency lists:
+
+- `cs_base.dict`: `ces_news_2023_1M/ces_news_2023_1M-words.txt`
+  from `ces_news_2023_1M.tar.gz`
+  (`0625e5f1e76a5e574268912e99af686ae9a15e980bbd9c8d177f880e78af2f84`)
+- `hu_base.dict`: `hun_news_2023_1M/hun_news_2023_1M-words.txt`
+  from `hun_news_2023_1M.tar.gz`
+  (`cc9a1d3e38b3e1ae704bf6c7de03ec70a498f05a2f699dea0ccb6666b304b8a8`)
+- `sv_base.dict`: `swe_news_2023_1M/swe_news_2023_1M-words.txt`
+  from `swe_news_2023_1M.tar.gz`
+  (`899447b8d42d2acca48d0c193a571678cac814e761329895d0e55ac37ad075c9`)
+- `tr_base.dict`: `tur_news_2023_1M/tur_news_2023_1M-words.txt`
+  from `tur_news_2023_1M.tar.gz`
+  (`abfae1f81bb7222c984afb40a06cc8d0e54376d43ea3f9b35e88412863f0b68e`)
+
+The Greek dictionary asset (`el_base.dict`) is built from the top 50,000
+frequency-ranked, letter-only entries in the eellak GSOC 2019 Greek spelling
+dictionary with frequencies (`data/spell_dict_with_freq.dic`).
+
+Reference:
+
+- Konstantinos Agiannis et al.: *Development of a Greek open source Morphological dictionary and application of it to Greek spelling tools*, GSOC 2019.
+
+Source:
+
+- https://github.com/eellak/gsoc2019-greek-morpho
+
+License:
+
+- Source code: GPLv3
+- Produced morphological database: CC BY-SA 3.0
+
 ## Cross-Repo Workflow (Practical)
 
 ### 1. Add language support in `pastiera`

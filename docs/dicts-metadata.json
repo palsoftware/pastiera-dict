@@ -1,4 +1,9 @@
 {
+  "cs_base": {
+    "name": "Czech (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "cs-CZ"
+  },
   "da_base": {
     "name": "Danish (Basic)",
     "shortDescription": "Common words • lightweight",
@@ -14,6 +19,11 @@
     "shortDescription": "Common words • lightweight",
     "languageTag": "en-US"
   },
+  "el_base": {
+    "name": "Greek (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "el-GR"
+  },
   "es_base": {
     "name": "Spanish (Basic)",
     "shortDescription": "Common words • lightweight",
@@ -24,10 +34,25 @@
     "shortDescription": "Common words • lightweight",
     "languageTag": "fr-FR"
   },
+  "hu_base": {
+    "name": "Hungarian (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "hu-HU"
+  },
   "it_base": {
     "name": "Italian (Basic)",
     "shortDescription": "Common words • lightweight",
     "languageTag": "it-IT"
+  },
+  "nl_base": {
+    "name": "Dutch (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "nl-NL"
+  },
+  "no_base": {
+    "name": "Norwegian (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "no-NO"
   },
   "pl_base": {
     "name": "Polish (Basic)",
@@ -44,6 +69,16 @@
     "shortDescription": "Common words • lightweight",
     "languageTag": "ru-RU"
   },
+  "sv_base": {
+    "name": "Swedish (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "sv-SE"
+  },
+  "tr_base": {
+    "name": "Turkish (Basic)",
+    "shortDescription": "Common words • lightweight",
+    "languageTag": "tr-TR"
+  },
   "uk_base": {
     "name": "Ukrainian",
     "shortDescription": "Common words • lightweight",
@@ -53,15 +88,5 @@
     "name": "Vietnamese",
     "shortDescription": "Common words • lightweight",
     "languageTag": "vi-VN"
-  },
-  "no_base": {
-    "name": "Norwegian (Basic)",
-    "shortDescription": "Common words • lightweight",
-    "languageTag": "no-NO"
-  },
-  "nl_base": {
-    "name": "Dutch (Basic)",
-    "shortDescription": "Common words • lightweight",
-    "languageTag": "nl-NL"
   }
 }
