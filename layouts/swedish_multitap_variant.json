@@ -1,6 +1,6 @@
 {
   "name": "Swedish (multi-tap åä variant)",
-  "description": "QWERTY-based Swedish layout with multi-tap access to Swedish-specific letters following the alphabet for åä.",
+  "description": "QWERTY-based Swedish layout with multi-tap access to Swedish-specific letters following the order of the alphabet for åä.",
   "mappings": {
     "KEYCODE_Q": { "lowercase": "q", "uppercase": "Q" },
     "KEYCODE_W": { "lowercase": "w", "uppercase": "W" },
